@@ -45,4 +45,3 @@ O projeto atende aos seguintes requisitos mínimos obrigatórios.
 
 * Guilherme Kenzo - https://github.com/zero123gui
 * José Lucas - https://github.com/JosefinoXp
-* [Nome do Aluno 2]
