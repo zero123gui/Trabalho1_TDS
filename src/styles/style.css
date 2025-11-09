@@ -11,3 +11,30 @@ body{
     background-color: #ffffff;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img.foto {
+    /* display: inline-block;
+    margin-bottom: 1rem; */
+    width: 30%;
+    vertical-align: middle;
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 800px) {
+    .col {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .col {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
