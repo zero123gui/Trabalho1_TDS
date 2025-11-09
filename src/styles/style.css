@@ -22,7 +22,7 @@ img.foto {
     margin-bottom: 1rem; */
     width: 30%;
     vertical-align: middle;
-    margin-top: 8px;
+    padding: 4px;
 }
 
 @media screen and (max-width: 800px) {
