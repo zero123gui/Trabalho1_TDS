@@ -11,7 +11,8 @@ body{
     background-color: #ffffff;
 }
 
-.center {
+h1.center {
+    padding-top: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +23,7 @@ img.foto {
     margin-bottom: 1rem; */
     width: 30%;
     vertical-align: middle;
-    padding: 4px;
+    padding: 10px;
 }
 
 @media screen and (max-width: 800px) {
