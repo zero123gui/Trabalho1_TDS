@@ -1,64 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-* {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root{
+  --space: 1rem; /* rem usado */
 }
+
+*{ box-sizing: border-box; }
 
 body{
-    background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #222;
 }
 
-h1.center {
-    padding-top: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+/* Compensa navbar fixa */
+.mt-nav{ margin-top: 88px; } /* px usado */
+
+h1,h2{ letter-spacing: .02em; }
+
+/* Exemplo de display e unidade % */
+.photo-card{ display: inline-block; width: 100%; } /* inline-block */
+.card-img-top.foto{ object-fit: cover; height: 240px; } /* px */
+.card-body{ padding: var(--space); } /* rem via var */
+
+/* Tabela básica (se precisar fora do Bootstrap) */
+table, tr, th, td{ border: 1px solid #dbe1ff; }
+table{ width: 100%; border-collapse: collapse; }
+th, td{ padding: .75em; } /* em usado */
+
+/* Responsividade (%, em, rem e flex) */
+@media (max-width: 992px){
+  .card-img-top.foto{ height: 220px; }
+}
+@media (max-width: 576px){
+  .card-img-top.foto{ height: 200px; }
 }
 
-h2.center {
-    padding-top: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+/* Utilidades pedidas */
+.hide-me{ display: none !important; }        /* display: none */
+.flex-center{
+  display: flex;                              /* flex */
+  align-items: center;
+  justify-content: center;
 }
 
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/* Exemplo de position relative/absolute + fixed (btnTop no HTML) */
+.relative-box{ position: relative; }          /* relative */
+.relative-box .abs{ position: absolute; top: 0; right: 0; } /* absolute */
 
-.info{
-    padding-top: 150px;
-}
-
-table, tr, th {
-    border: 1px blue;
-}
-
-img.foto {
-    /* display: inline-block;
-    margin-bottom: 1rem; */
-    width: 30%;
-    vertical-align: middle;
-    padding: 10px;
-}
-
-@media screen and (max-width: 800px) {
-    .col {
-        flex: 50%;
-        max-width: 50%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .col {
-        flex: 100%;
-        max-width: 100%;
-    }
+#btnTop{
+  position: fixed;     /* fixed */
+  right: 1rem;
+  bottom: 1rem;
+  width: 3rem;         /* rem */
+  height: 3rem;        /* rem */
+  display: none;
 }
