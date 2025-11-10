@@ -16,6 +16,29 @@ h1.center {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+h2.center {
+    padding-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    padding-top: 150px;
+}
+
+table, tr, th {
+    border: 1px blue;
 }
 
 img.foto {
