@@ -55,3 +55,10 @@ th, td{ padding: .75em; } /* em usado */
   height: 3rem;        /* rem */
   display: none;
 }
+
+/* Demo visual discreta para H3–H6 */
+.heading-demo h3 { font-weight: 600; }
+.heading-demo h4 { font-weight: 600; opacity: .95; }
+.heading-demo h5 { font-weight: 600; opacity: .9; }
+.heading-demo h6 { font-weight: 600; opacity: .85; letter-spacing: .02em; }
+.heading-demo p  { font-size: .95rem; }
